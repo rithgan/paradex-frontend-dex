@@ -103,12 +103,12 @@ const LotteryBanner: React.FC<{ currentLotteryPrize: string }> = ({ currentLotte
     <Wrapper>
       <Inner>
         <LeftWrapper>
-          <NowLive>{t('Lottery Now Live')}</NowLive>
+          {/* <NowLive>{t('Lottery Now Live')}</NowLive> */}
           <PrizeFlex>
-            <Over fontSize="40px" color="#ffffff" bold mr="8px">
+            {/* <Over fontSize="40px" color="#ffffff" bold mr="8px">
               {over}
-            </Over>
-            <>
+            </Over> */}
+            {/* <>
               {prizeInBusd.isNaN() ? (
                 <>
                   <Skeleton height={40} width={120} mb="10px" mt="10px" mr="8px" />
@@ -116,19 +116,22 @@ const LotteryBanner: React.FC<{ currentLotteryPrize: string }> = ({ currentLotte
               ) : (
                 <Balance fontSize="40px" color="#ffffff" bold prefix="$" mr="8px" decimals={0} value={prizeTotal} />
               )}
-            </>
-            <Text fontSize="40px" color="#ffffff" bold>
+            </> */}
+            {/* <Text fontSize="40px" color="#ffffff" bold>
               {inPrizes}
+            </Text> */}
+            <Text fontSize="40px" color="#fff" bold>
+              The DeFi Automated Market Maker and Yield Farming Protocol
             </Text>
           </PrizeFlex>
-          <NavLink exact activeClassName="active" to="/lottery" id="lottery-pot-banner">
+          {/* <NavLink exact activeClassName="active" to="/lottery" id="lottery-pot-banner">
             <Button>
               <Text color="white" bold fontSize="16px" mr="4px">
                 {t('Play Now')}
               </Text>
               <ArrowForwardIcon color="white" />
             </Button>
-          </NavLink>
+          </NavLink> */}
         </LeftWrapper>
         <RightWrapper>
           <img src="/images/lottery/tombola.png" alt="lottery bunny" />
